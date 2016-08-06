@@ -14,7 +14,7 @@ describe('Controllers', function(){
         expect(scope.settings.enableFriends).toEqual(true);
     });
 
-    it('should have enabled boy to be true',function(){
-    	expect(scope.settings.enableBoy).toEqual(true);
+    it('should have enabled boy to be false',function(){
+    	expect(scope.settings.enableBoy).toEqual(false);
     });
 });
