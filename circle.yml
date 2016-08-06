@@ -1,2 +1,4 @@
-general:
-  build_dir: tests
+test:
+  override:
+      - karma start tests/my.conf.js
+
