@@ -1,3 +1,4 @@
 test:
   override:
-      - karma start tests/my.conf.js --single-run
+      - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+      - karma start tests/my.conf.js --single-run --reporters junit
