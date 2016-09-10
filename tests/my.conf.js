@@ -41,8 +41,8 @@ files: [
     reporters: ['junit'],
 
 
-	junitReporter: {
-      outputDir: '../$CIRCLE_ARTIFACTS/', // results will be saved as $outputDir/$browserName.xml 
+        junitReporter: {
+      outputDir: '../$CIRCLE_TEST_REPORTS/junit/', // results will be saved as $outputDir/$browserName.xml 
       outputFile: 'test-results.xml', // if included, results will be saved as $outputDir/$browserName/$outputFile 
       suite: '', // suite will become the package name attribute in xml testsuite element 
       useBrowserName: false, // add browser name to report and classes names 
