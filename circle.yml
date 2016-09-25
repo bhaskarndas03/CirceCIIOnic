@@ -2,4 +2,3 @@ test:
   post:
       - mkdir -p $CIRCLE_TEST_REPORTS/junit/
       - karma start tests/my.conf.js --single-run --reporters junit
-      - find . -type f -regex ".*/target/failsafe-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
