@@ -1,4 +1,4 @@
 test:
   post:
-      - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+      - mkdir -p $CIRCLE_TEST_REPORTS/junit_/
       - karma start tests/my.conf.js --single-run --reporters junit
